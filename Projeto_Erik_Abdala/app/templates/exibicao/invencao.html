@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <title>IFisica</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a href="/"><img src="{% static 'img/favicon.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-right: 8px;"></a>
+    <a class="navbar-brand" href="/">IFisica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/">Home</a>
+          </li>
+        <div class = "dropdown">
+        <button class = "nav-link text-dark dropbtn">Áreas<i class = "arrow down"></i></button>
+        <div class = "dropdown-content">
+          <a href = "/area">Áreas</a>
+          <a href = "/subarea">Subáreas</a>
+          <a href = "/topico">Tópicos</a>
+        </div>
+        </div>
+        <div class = "dropdown">
+        <button class = "nav-link text-dark dropbtn">Invenções<i class = "arrow down"></i></button>
+        <div class = "dropdown-content">
+          <a href = "/invencao">Invenções</a>
+          <a href = "/fisico">Físicos</a>
+        </div>
+        </div>
+        <div class = "dropdown">
+        <button class = "nav-link text-dark dropbtn">Questionários<i class = "arrow down"></i></button>
+        <div class = "dropdown-content">
+          <a href="/questionario">Questionários</a>
+          <a href="/respondido">Envios</a>
+        </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/pessoa">Integrantes</a>
+        </li>
+        <li id = "adm" class="nav-item">
+          <a class="nav-link text-dark" href="/admin/">Administração</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

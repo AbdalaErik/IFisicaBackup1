@@ -1,0 +1,147 @@
+body {
+  background-color: lightblue;
+  font-family: verdana;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropbtn {
+  background-color: #17A2B8;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #52b6c3;
+}
+
+.arrow {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 6px;
+  margin-bottom: 3px;
+}
+
+.center {
+  align-self: center;
+}
+
+#adm {
+  display: none;
+}
+
+.teste2 {
+  font-weight: normal;
+}
+
+.teste {
+  display: flex;
+}
+
+.apresentacao-fundo {
+  height: 100%;
+  display: block;
+}
+
+.principal {
+  margin: auto;
+  display: block;
+  padding-top: 3%;
+}
+
+/* Seção da lista em Tópicos */
+/* Estilo para o collapsible */
+.collapsible {
+  background-color: #cce6ff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #99ceff;
+}
+
+.collapsible::before {
+  content: "\02795";
+  font-size: 13px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.active::before {
+  content: "\02796";
+}
+
+.content {
+  padding-left: 20px;
+  display: none;
+}
+
+/* Estilização dos níveis */
+.level-2 {
+  padding-left: 40px;
+}
+
+.level-3 {
+  padding-left: 60px;
+}
+
+/* Estilos para a lista em Questionários*/
+.teste3-1 {
+  list-style: none;
+  padding: 0;
+}
+/* Estilizando os itens da lista */
+.teste3-2 {
+  background-color: #f2f2f2;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+/* Alterando a cor de fundo de cada segundo item */
+.teste3-2:nth-child(even) {
+  background-color: #e0e0e0;
+}
